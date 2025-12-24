@@ -1,12 +1,11 @@
 /* =====================
-   HEADER / NAVBAR
+   NAVBAR HOVER ANIMATIONS
 ===================== */
-nav ul.menu li a {
+nav.navbar ul li a {
   position: relative;
-  transition: all 0.3s ease;
 }
 
-nav ul.menu li a::after {
+nav.navbar ul li a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -17,13 +16,13 @@ nav ul.menu li a::after {
   transition: width 0.3s ease;
 }
 
-nav ul.menu li a:hover::after,
-nav ul.menu li a.active::after {
+nav.navbar ul li a:hover::after,
+nav.navbar ul li a.active::after {
   width: 100%;
 }
 
 /* =====================
-   HERO
+   HERO SECTION
 ===================== */
 .hero {
   text-align: center;
@@ -72,7 +71,7 @@ nav ul.menu li a.active::after {
 }
 
 /* =====================
-   PROJECTS
+   PROJECTS SECTION
 ===================== */
 .projects {
   max-width: 1200px;
