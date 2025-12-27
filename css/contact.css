@@ -1,0 +1,95 @@
+/* =====================
+   CONTACT PAGE ONLY
+===================== */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px 20px;
+}
+
+/* BAŞLIK */
+.contact-title {
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #7a1c1c;
+}
+
+/* FORM KUTUSU */
+#contactForm {
+  background-color: #ffffff;
+  padding: 35px;
+  border-radius: 18px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* FORM ALANLARI */
+#contactForm div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+#contactForm label {
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+#contactForm input,
+#contactForm textarea {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  font-family: inherit;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#contactForm textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* FOCUS EFEKTİ */
+#contactForm input:focus,
+#contactForm textarea:focus {
+  outline: none;
+  border-color: #7a1c1c;
+  box-shadow: 0 0 0 2px rgba(122, 28, 28, 0.2);
+}
+
+/* GÖNDER BUTONU */
+#contactForm button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 14px;
+  background-color: #7a1c1c;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#contactForm button:hover {
+  background-color: #5c1212;
+  transform: translateY(-2px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .contact-title {
+    font-size: 26px;
+  }
+
+  #contactForm {
+    padding: 25px;
+  }
+}

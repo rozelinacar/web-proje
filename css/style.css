@@ -175,3 +175,25 @@ body {
   background-color: rgb(148, 156, 155) !important;
 }
 
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #7a1c1c;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
