@@ -172,7 +172,7 @@ main {
   color: #000 !important;
 }
 body {
-  background-color: rgb(148, 156, 155) !important;
+  background-color: rgb(255, 255, 255) !important;
 }
 
 nav ul {
@@ -197,3 +197,36 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
+
+.projects-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.card {
+    width: 280px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(237, 0, 0, 0.542);
+    flex-shrink: 0;
+}
+
+.about-left, .about-right {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+    animation-delay: 0.2s; /* istersen sıra ile animasyon verebilirsin */
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
